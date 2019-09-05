@@ -6,7 +6,7 @@ The questions will be based on a movie topic and the user has to guess which ans
 Once the answers are chosen the score will display upon the screen letting the user know how many questions out of 5 they got right.*/
 var card = $("#quiz-area");
 
-// Question set
+
 var questions = [
   {
     question:"What city is Batman Located in",
@@ -33,7 +33,7 @@ var questions = [
 
  }];
 
-// Variable that will hold the setInterval
+
 var timer;
 
 var game = {
@@ -92,8 +92,6 @@ var game = {
     card.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
   }
 };
-
-// CLICK EVENTS
 
 $(document).on("click", "#start", function() {
   game.start();
