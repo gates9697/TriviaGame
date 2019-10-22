@@ -39,7 +39,7 @@ var timer;
 var game = {
   correct: 0,
   incorrect: 0,
-  counter: 120,
+  counter: 30,
 
   countdown: function() {
     game.counter--;
@@ -54,7 +54,7 @@ var game = {
     timer = setInterval(game.countdown, 600);
 
     $("#sub-wrapper").prepend(
-      "<h2>Time Remaining: <span id='counter-number'>120</span> Seconds</h2>"
+      "<h2>Time Remaining: <span id='counter-number'>30</span> Seconds</h2>"
     );
 
     $("#start").remove();

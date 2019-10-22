@@ -1,0 +1,1 @@
+This is a Batman themed trivia game. This game was built using HTML and CSS. Players only have 30 seconds on the clock to answer 4 questions.
