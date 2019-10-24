@@ -60,10 +60,10 @@ var game = {
     $("#start").remove();
 
     for (var i = 0; i < questions.length; i++) {
-      card.append("<h2>" + questions[i].question + "</h2>");
-      for (var j = 0; j < questions[i].answers.length; j++) {
-        card.append("<input type='radio' name='question-" + i +
-          "' value='" + questions[i].answers[j] + "''>" + questions[i].answers[j]);
+    card.append("<h2>" + questions[i].question + "</h2>");
+    for (var j = 0; j < questions[i].answers.length; j++) {
+    card.append("<input type='radio' name='question-" + i +
+    "' value='" + questions[i].answers[j] + "''>" + questions[i].answers[j]);
       }
     }
 
@@ -73,10 +73,10 @@ var game = {
   done: function() {
     var inputs = card.children("input:checked");
     for (var i = 0; i < inputs.length; i++) {
-      if ($(inputs[i]).val() === questions[i].correctAnswer) {
-        game.correct++;
+    if ($(inputs[i]).val() === questions[i].correctAnswer) {
+    game.correct++;
       } else {
-        game.incorrect++;
+    game.incorrect++;
       }
     }
     this.result();
